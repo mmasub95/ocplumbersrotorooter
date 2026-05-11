@@ -259,13 +259,18 @@
       margin-left: -60px;
       align-self: flex-end;
     }
-    .hero-img-panel img {
+    /* Desktop: van image */
+    .van-img {
       width: 100%;
       max-width: 660px;
       height: auto;
       display: block;
       mix-blend-mode: multiply;
     }
+    /* Mobile: plumber portrait — hidden on desktop */
+    .plumber-img { display: none; }
+    /* Mobile-only call section (below grid) — hidden on desktop */
+    .hero-call-mob { display: none; }
     .hero-content { padding: 48px 0 48px 32px; }
     .hero-badge-strip {
       background: var(--red);
@@ -571,9 +576,95 @@
       .header-phone { display: none; }
       .hamburger { display: flex; }
       .mob-hdr-call { display: flex; }
-      .hero-inner { grid-template-columns: 1fr; min-height: unset; }
-      .hero-img-panel { display: none; }
-      .hero-content { padding: 36px 20px 36px; }
+
+      /* Mobile hero: 2-col grid (plumber | headline) matching RR layout */
+      /* Split background: black left (matches PNG bg) → fog right */
+      .hero { background: linear-gradient(to right, #000 44%, var(--fog) 44%); }
+      .hero-inner {
+        grid-template-columns: 44% 56%;
+        min-height: unset;
+        align-items: stretch;
+      }
+      .hero-img-panel {
+        margin-left: 0;
+        align-self: stretch;
+        overflow: hidden;
+        background: transparent;
+      }
+      .van-img { display: none; }
+      .plumber-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 240px;
+        object-fit: cover;
+        object-position: top center;
+      }
+      /* Right column: only show headline on mobile */
+      .hero-content {
+        padding: 20px 16px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .hero-badge-strip { display: none; }
+      .hero-avail { display: none; }
+      .hero-call-label { display: none; }
+      .hero-phone { display: none; }
+      .hero-ctas { display: none; }
+      .hero-trust { display: none; }
+      .hero-rating { display: none; }
+
+      /* Mobile call section appears below the 2-col grid */
+      .hero-call-mob {
+        display: block;
+        background: #fff;
+        padding: 20px 20px 24px;
+        border-top: 1px solid var(--border);
+      }
+      .hero-call-mob .hcm-label {
+        font-family: var(--font-cond);
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--red);
+        line-height: 1.2;
+        margin-bottom: 4px;
+      }
+      .hero-call-mob .hcm-phone {
+        font-family: var(--font-cond);
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--navy);
+        line-height: 1;
+        letter-spacing: -1.5px;
+        margin-bottom: 16px;
+      }
+      .hero-call-mob .hcm-phone a { color: var(--navy); }
+      .hero-call-mob .hcm-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: var(--yellow);
+        color: var(--navy-dark);
+        font-family: var(--font-cond);
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .4px;
+        padding: 14px 20px;
+        border-radius: 5px;
+        margin-bottom: 14px;
+        animation: btn-pulse 2.2s infinite;
+      }
+      .hero-call-mob .hcm-rating {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 14px;
+        color: var(--body);
+      }
+      .hero-call-mob .hcm-stars { color: #fbbc04; font-size: 18px; letter-spacing: 1px; }
       .trust-inner { grid-template-columns: 1fr; }
       .split-inner { grid-template-columns: 1fr; }
       .split-inner.rev { direction: ltr; }
@@ -684,12 +775,13 @@
   <div class="container" style="max-width:100%; padding:0;">
     <div class="hero-inner">
 
-      <!-- LEFT: Van image bleeds off edge -->
+      <!-- LEFT: Van (desktop) / Plumber portrait (mobile) -->
       <div class="hero-img-panel">
-        <img src="images/van.png?v=3" alt="OC Plumbers service van and technician">
+        <img class="van-img" src="images/van.png?v=3" alt="OC Plumbers service van">
+        <img class="plumber-img" src="images/plumber.png" alt="OC Plumbers technician Cam">
       </div>
 
-      <!-- RIGHT: Content -->
+      <!-- RIGHT: Content (full on desktop, headline-only on mobile) -->
       <div class="hero-content">
         <span class="hero-badge-strip">Free Estimates &nbsp;·&nbsp; No Trip Charge &nbsp;·&nbsp; Same Day Service</span>
         <h1 class="hero-title">Plumber in Orange County, CA —<br>Plumbing, Drain Cleaning &amp; Water Cleanup</h1>
@@ -712,6 +804,18 @@
       </div>
 
     </div>
+
+    <!-- MOBILE-ONLY: Call section below the 2-col grid (white bg, like RR) -->
+    <div class="hero-call-mob">
+      <div class="hcm-label">Call for Plumbing Service:</div>
+      <div class="hcm-phone"><a href="tel:7145071740">714-507-1740</a></div>
+      <a href="tel:7145071740" class="hcm-btn">📞 Call 714-507-1740</a>
+      <div class="hcm-rating">
+        <span class="hcm-stars">★★★★★</span>
+        <span>Rated 4.9 on Google</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
