@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leak Detection in Orange County, CA | OC Plumbers | 714-507-1740</title>
+  <meta name="description" content="Professional leak detection in Orange County. Slab leaks, hidden pipe leaks, and wall leaks found using camera technology — minimal damage. Free estimates. Call 714-507-1740.">
+  <meta name="theme-color" content="#1a2d6b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #1a2d6b; --navy-dark: #111e4a; --yellow: #f5c518; --yellow-dk: #d4a800;
+      --red: #da291c; --red-dark: #b71c14; --white: #ffffff; --fog: #eceef6;
+      --body: #212529; --grey: #666666; --border: #dee2e6; --light-bg: #f8f8f8;
+      --font: 'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;
+      --font-cond: 'Roboto Condensed','Helvetica Neue',Arial,sans-serif;
+    }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: var(--font); font-size: 16px; line-height: 1.5; color: var(--body); background:#fff; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+    a { color:var(--navy); text-decoration:none; }
+    a:hover { color:var(--navy-dark); }
+    ul { list-style:none; }
+    img { max-width:100%; display:block; }
+    .container { max-width:1200px; margin:0 auto; padding:0 24px; }
+    /* HEADER */
+    .site-header { background:var(--navy); position:sticky; top:0; z-index:100; box-shadow:0 2px 8px rgba(0,0,0,.25); }
+    .header-inner { display:flex; align-items:center; gap:20px; height:72px; }
+    .logo { display:flex; align-items:center; gap:8px; flex-shrink:0; }
+    .logo-oc { font-family:var(--font-cond); font-size:40px; font-weight:700; font-style:italic; color:var(--yellow); line-height:1; letter-spacing:-1px; }
+    .logo-right { background:var(--yellow); color:var(--navy-dark); font-family:var(--font-cond); font-weight:700; padding:3px 10px 3px 8px; border-radius:3px; line-height:1.15; }
+    .logo-right .logo-name { font-size:19px; letter-spacing:1.5px; text-transform:uppercase; display:block; }
+    .logo-right .logo-sub  { font-size:9px; letter-spacing:1px; text-transform:uppercase; opacity:.75; display:block; }
+    .main-nav { display:flex; margin-left:auto; gap:4px; }
+    .main-nav a { color:rgba(255,255,255,.88); font-family:var(--font-cond); font-size:14px; font-weight:700; letter-spacing:.7px; text-transform:uppercase; padding:6px 10px; border-radius:4px; transition:background .15s; }
+    .main-nav a:hover { background:rgba(255,255,255,.12); color:#fff; }
+    .header-phone { display:flex; flex-direction:column; font-family:var(--font-cond); color:#fff; }
+    .header-phone small { font-size:10px; opacity:.7; text-transform:uppercase; letter-spacing:.5px; }
+    .header-phone a { font-size:18px; font-weight:700; color:#fff; letter-spacing:.5px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:6px; font-family:var(--font-cond); font-weight:700; font-size:14px; letter-spacing:.8px; text-transform:uppercase; border:none; border-radius:4px; cursor:pointer; padding:10px 18px; transition:background .15s,transform .1s; text-decoration:none; }
+    .btn-call { background:var(--yellow); color:var(--navy-dark); animation:btn-pulse 2.2s infinite; }
+    .btn-call:hover { background:var(--yellow-dk); color:var(--navy-dark); transform:translateY(-1px); }
+    .btn-lg { font-size:17px; padding:15px 32px; border-radius:5px; }
+    .btn-navy { background:var(--navy); color:#fff; }
+    .btn-navy:hover { background:var(--navy-dark); color:#fff; }
+    @keyframes btn-pulse { 0%{box-shadow:0 0 0 0 rgba(245,197,24,.75)} 70%{box-shadow:0 0 0 14px rgba(245,197,24,0)} 100%{box-shadow:0 0 0 0 rgba(245,197,24,0)} }
+    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; margin-left:4px; }
+    .hamburger span { width:24px; height:2px; background:#fff; border-radius:2px; display:block; }
+    .mob-hdr-call { display:none; width:42px; height:42px; border-radius:50%; background:var(--yellow); align-items:center; justify-content:center; flex-shrink:0; }
+    .mobile-nav { display:none; flex-direction:column; background:var(--navy-dark); padding:8px 0 16px; }
+    .mobile-nav.open { display:flex; }
+    .mobile-nav a { color:rgba(255,255,255,.9); font-family:var(--font-cond); font-size:15px; font-weight:700; text-transform:uppercase; padding:12px 24px; letter-spacing:.5px; border-bottom:1px solid rgba(255,255,255,.08); }
+    .mob-cta { background:var(--yellow)!important; color:var(--navy-dark)!important; text-align:center; border-radius:0!important; }
+    /* CITY BAR */
+    .city-bar { background:var(--fog); border-bottom:1px solid #d0d4e8; }
+    .city-bar-inner { display:flex; align-items:center; gap:12px; padding:10px 24px; max-width:1200px; margin:0 auto; }
+    .city-loc { display:flex; align-items:center; gap:6px; font-family:var(--font-cond); font-size:14px; font-weight:700; color:var(--navy); text-transform:uppercase; letter-spacing:.5px; flex:1; }
+    .city-loc svg { width:16px; height:16px; fill:var(--yellow); flex-shrink:0; }
+    /* BREADCRUMB */
+    .breadcrumb { background:#fff; border-bottom:1px solid var(--border); padding:12px 0; }
+    .breadcrumb-inner { display:flex; align-items:center; gap:6px; font-size:13px; color:var(--grey); }
+    .breadcrumb-inner a { color:var(--grey); }
+    .breadcrumb-inner a:hover { color:var(--navy); text-decoration:underline; }
+    .breadcrumb-inner .sep { color:#ccc; }
+    .breadcrumb-inner .current { color:var(--red); font-weight:600; }
+    /* SERVICE PAGE HERO */
+    .svc-hero { background:var(--fog); padding:48px 0 0; }
+    .svc-hero-inner { display:grid; grid-template-columns:1fr 420px; gap:48px; align-items:center; }
+    .svc-hero h1 { font-family:var(--font-cond); font-size:42px; font-weight:700; color:var(--navy); text-transform:uppercase; line-height:1.1; margin-bottom:16px; }
+    .svc-hero .lead { font-size:17px; color:var(--body); line-height:1.7; margin-bottom:24px; }
+    .svc-hero .cta-row { display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:20px; }
+    .svc-hero .trust-line { font-size:13px; color:var(--grey); }
+    .svc-img-box { background:var(--navy); border-radius:12px; overflow:hidden; position:relative; }
+    .svc-img-box img { width:100%; display:block; }
+    .svc-img-banner { background:var(--red); color:#fff; font-family:var(--font-cond); font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; padding:12px 20px; display:flex; align-items:center; justify-content:space-between; }
+    .svc-img-banner svg { width:18px; height:18px; fill:#fff; }
+    /* CONTENT SECTION */
+    .svc-content { padding:56px 0; }
+    .svc-content-inner { display:grid; grid-template-columns:1fr 320px; gap:48px; align-items:start; }
+    .svc-body h2 { font-family:var(--font-cond); font-size:28px; font-weight:700; color:var(--navy); text-transform:uppercase; margin-bottom:14px; margin-top:32px; }
+    .svc-body h2:first-child { margin-top:0; }
+    .svc-body p { font-size:16px; line-height:1.75; color:var(--body); margin-bottom:16px; }
+    .svc-body ul { margin-bottom:16px; }
+    .svc-body ul li { font-size:15px; line-height:1.6; color:var(--body); padding:6px 0 6px 24px; position:relative; border-bottom:1px solid var(--border); }
+    .svc-body ul li:before { content:"✓"; position:absolute; left:0; color:var(--red); font-weight:700; }
+    /* SIDEBAR */
+    .svc-sidebar { position:sticky; top:90px; }
+    .sidebar-cta { background:var(--navy); color:#fff; border-radius:10px; padding:28px 22px; text-align:center; margin-bottom:20px; }
+    .sidebar-cta h3 { font-family:var(--font-cond); font-size:20px; font-weight:700; text-transform:uppercase; color:#fff; margin-bottom:8px; }
+    .sidebar-cta .phone { font-family:var(--font-cond); font-size:28px; font-weight:700; color:var(--yellow); letter-spacing:-1px; display:block; margin:10px 0; }
+    .sidebar-cta .avail { font-size:12px; color:rgba(255,255,255,.7); margin-bottom:16px; }
+    .sidebar-cta .btn { width:100%; margin-bottom:10px; }
+    .sidebar-cta .trust { font-size:11px; color:rgba(255,255,255,.6); margin-top:10px; }
+    .sidebar-related { border:1px solid var(--border); border-radius:10px; padding:20px; }
+    .sidebar-related h4 { font-family:var(--font-cond); font-size:15px; font-weight:700; color:var(--navy); text-transform:uppercase; margin-bottom:14px; }
+    .sidebar-related ul li { padding:0; border-bottom:1px solid var(--border); }
+    .sidebar-related ul li:last-child { border-bottom:none; }
+    .sidebar-related ul li a { display:flex; align-items:center; gap:8px; font-size:14px; color:var(--navy); padding:10px 0; font-weight:600; }
+    .sidebar-related ul li a:hover { color:var(--red); }
+    .sidebar-related ul li:before { display:none; }
+    /* CTA BAND */
+    .cta-band { background:var(--navy); color:#fff; padding:48px 0; text-align:center; }
+    .cta-band h2 { font-family:var(--font-cond); font-size:32px; font-weight:700; text-transform:uppercase; margin-bottom:8px; }
+    .cta-band p { color:rgba(255,255,255,.8); margin-bottom:24px; font-size:16px; }
+    .cta-band .phone-big { font-family:var(--font-cond); font-size:48px; font-weight:700; color:var(--yellow); letter-spacing:-2px; display:block; margin-bottom:20px; }
+    /* FOOTER */
+    footer { background:var(--navy-dark); color:#fff; padding:56px 0 0; }
+    .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,.1); }
+    .footer-brand p { font-size:13px; color:rgba(255,255,255,.65); margin-top:14px; line-height:1.7; }
+    .footer-phone-row { display:flex; flex-direction:column; }
+    .footer-phone-row small { font-size:10px; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.5px; }
+    .footer-phone-row a { font-family:var(--font-cond); font-size:24px; font-weight:700; color:var(--yellow); letter-spacing:.5px; }
+    .footer-col h5 { font-family:var(--font-cond); font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,.5); margin-bottom:14px; }
+    .footer-col ul li a { font-size:13px; color:rgba(255,255,255,.75); padding:4px 0; display:block; }
+    .footer-col ul li a:hover { color:var(--yellow); }
+    .footer-bottom { display:flex; align-items:center; justify-content:space-between; padding:20px 0; font-size:12px; color:rgba(255,255,255,.4); flex-wrap:wrap; gap:10px; }
+    .footer-bottom a { color:rgba(255,255,255,.4); margin-left:16px; }
+    .footer-bottom a:hover { color:rgba(255,255,255,.7); }
+    .footer-social { display:flex; gap:8px; margin-top:14px; }
+    .soc { width:32px; height:32px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; }
+    .soc-fb { background:#1877f2; color:#fff; }
+    .soc-ig { background:radial-gradient(circle at 30% 110%,#fd5,#ff543e,#c837ab); color:#fff; }
+    .soc-yt { background:#ff0000; color:#fff; }
+    .soc-li { background:#0077b5; color:#fff; }
+    /* MOBILE CALL BAR */
+    .mob-call-bar { display:none; position:fixed; bottom:0; left:0; right:0; z-index:200; }
+    .mob-call-bar a { display:flex; align-items:center; justify-content:center; gap:10px; background:var(--yellow); color:var(--navy-dark); font-family:var(--font-cond); font-size:18px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; padding:18px; }
+    /* RESPONSIVE */
+    @media (max-width:991px) {
+      .main-nav, .header-phone, .site-header > .container > .btn-call { display:none; }
+      .hamburger { display:flex; }
+      .mob-hdr-call { display:flex; }
+      .header-inner { height:64px; }
+      .logo { gap:8px; }
+      .logo-oc { font-size:28px; }
+      .logo-right .logo-name { font-size:16px; }
+      .logo-right .logo-sub { font-size:8px; }
+      .city-bar-inner { padding:8px 16px; flex-wrap:wrap; gap:6px; }
+      .city-loc { font-size:13px; flex:1 1 100%; white-space:normal; }
+      .svc-hero-inner { grid-template-columns:1fr; gap:24px; }
+      .svc-img-box { border-radius:8px; }
+      .svc-hero { padding:32px 0 0; }
+      .svc-hero h1 { font-size:30px; }
+      .svc-content-inner { grid-template-columns:1fr; }
+      .svc-sidebar { position:static; }
+      .footer-top { grid-template-columns:1fr 1fr; gap:28px; }
+      .cta-band .phone-big { font-size:36px; }
+      body { padding-bottom:62px; }
+      .mob-call-bar { display:block; }
+    }
+    @media (max-width:575px) {
+      .footer-top { grid-template-columns:1fr; }
+    }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo" aria-label="OC Plumbers Home">
+      <span class="logo-oc">OC</span>
+      <div class="logo-right">
+        <span class="logo-name">Plumbers</span>
+        <span class="logo-sub">Plumbing &amp; Water Cleanup</span>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="/#services">Services</a>
+      <a href="/#emergency">Emergency</a>
+      <a href="/#reviews">Reviews</a>
+      <a href="/#why-us">Why Us</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <div class="header-phone">
+      <small>Call Anytime, 24/7</small>
+      <a href="tel:7145071740">714-507-1740</a>
+    </div>
+    <a href="tel:7145071740" class="btn btn-call" style="flex-shrink:0;font-size:15px;padding:11px 20px;">📞 Call Now</a>
+    <a href="tel:7145071740" class="mob-hdr-call" aria-label="Call 714-507-1740">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.29 21 3 13.71 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.27.2 2.48.57 3.57.11.36.03.74-.24 1.01L6.6 10.8z" fill="#1a2d6b"/></svg>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="tel:7145071740" class="mob-cta">📞 Call 714-507-1740</a>
+    <a href="/#services">Services</a>
+    <a href="/#emergency">24/7 Emergency</a>
+    <a href="/#reviews">Reviews</a>
+    <a href="/#why-us">Why OC Plumbers</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+</header>
+<div class="city-bar">
+  <div class="city-bar-inner">
+    <div class="city-loc">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      Orange County, CA — Anaheim, Irvine, Santa Ana &amp; More
+    </div>
+    <div class="city-actions">
+      <a href="tel:7145071740" class="btn btn-call" style="font-size:14px;padding:9px 20px;">📞 Call 714-507-1740</a>
+    </div>
+  </div>
+</div>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container breadcrumb-inner">
+    <a href="/">Home</a><span class="sep">›</span>
+    <a href="/#services">Services</a><span class="sep">›</span>
+    <span class="current">Leak Detection</span>
+  </div>
+</nav>
+<section class="svc-hero">
+  <div class="container">
+    <div class="svc-hero-inner">
+      <div>
+        <h1>Leak Detection in Orange County, CA</h1>
+        <p class="lead">A hidden water leak can go undetected for months — silently causing mold, structural damage, and skyrocketing water bills. OC Plumbers uses non-invasive camera and acoustic technology to find leaks under slabs, inside walls, and underground throughout Orange County.</p>
+        <div class="cta-row">
+          <a href="tel:7145071740" class="btn btn-call btn-lg">📞 Call 714-507-1740</a>
+        </div>
+        <p class="trust-line">✅ Licensed &amp; Insured &nbsp;·&nbsp; ⭐ 4.9 Stars &nbsp;·&nbsp; 🚀 Same Day Service &nbsp;·&nbsp; 🚫 No Trip Charge</p>
+      </div>
+      <div class="svc-img-box">
+        <img src="/images/van.png" alt="OC Plumbers service van" style="mix-blend-mode:multiply;background:var(--fog);">
+        <div class="svc-img-banner">
+          <span>FREE ESTIMATES &amp; NO TRIP CHARGE. SAME DAY SERVICE</span>
+          <svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="svc-content">
+  <div class="container">
+    <div class="svc-content-inner">
+      <div class="svc-body">
+        
+      <h2>Non-Invasive Leak Detection Technology</h2>
+      <p>Older methods of finding a hidden leak meant cutting holes in walls or tearing up floors. OC Plumbers uses modern acoustic listening equipment, thermal imaging, and fiber optic pipe cameras to locate leaks precisely — with minimal or no damage to your home.</p>
+      <p>Once we find the leak, we give you a transparent repair estimate before any work begins.</p>
+      <h2>Leak Detection Services</h2>
+      <ul>
+        <li>Slab leak detection and repair</li>
+        <li>Hidden pipe leak detection (walls, ceilings, floors)</li>
+        <li>Underground water line leak detection</li>
+        <li>Video pipe camera inspection</li>
+        <li>Acoustic leak detection using listening equipment</li>
+        <li>Pressure testing to confirm leak location</li>
+        <li>Pool and spa plumbing leak detection</li>
+        <li>Gas line leak detection (natural gas and propane)</li>
+      </ul>
+      <h2>Slab Leaks in Orange County</h2>
+      <p>Slab leaks — pipes leaking beneath your concrete foundation — are common in Orange County due to the region's clay-heavy soil, which shifts with seasonal moisture changes and puts stress on copper pipes. Left untreated, slab leaks can crack your foundation and cause major structural damage.</p>
+      <p>Signs of a slab leak include warm spots on the floor, the sound of running water when all fixtures are off, a sudden spike in your water bill, or cracks in walls and flooring.</p>
+      <h2>Signs You May Have a Hidden Leak</h2>
+      <ul>
+        <li>Water bill increased significantly with no change in usage</li>
+        <li>Sound of running water when all taps are off</li>
+        <li>Warm or damp spots on floor, wall, or ceiling</li>
+        <li>Mold, mildew, or musty odors in a specific area</li>
+        <li>Low water pressure throughout the home</li>
+        <li>Meter continues to spin with all water turned off</li>
+        <li>Foundation cracks or shifting floors</li>
+      </ul>
+      <h2>What to Do If You Suspect a Leak</h2>
+      <p>First, check your water meter. Turn off all water in your home, then watch the meter for 15 minutes. If it moves, you have a leak somewhere. Call OC Plumbers immediately — the sooner we locate it, the less damage it causes and the less it costs to repair.</p>
+    
+      </div>
+      
+<aside class="svc-sidebar">
+  <div class="sidebar-cta">
+    <h3>Call for Service</h3>
+    <p style="color:rgba(255,255,255,.75);font-size:13px;">A real plumber picks up — not an answering service.</p>
+    <a href="tel:7145071740" class="phone">714-507-1740</a>
+    <p class="avail">Available 24/7 · No Extra Charge Nights &amp; Weekends</p>
+    <a href="tel:7145071740" class="btn btn-call" style="width:100%;font-size:15px;padding:13px;">📞 Call Now</a>
+    <p class="trust">Licensed &amp; Insured · Same Day Service · Free Estimates</p>
+  </div>
+  <div class="sidebar-related">
+    <h4>Other Services</h4>
+    <ul>
+      <li><a href="/services/drain-cleaning/">🚿 Drain Cleaning</a></li>
+      <li><a href="/services/plumbing-repair/">🔧 Plumbing Repair</a></li>
+      <li><a href="/services/water-heater-service/">🌡️ Water Heater Service</a></li>
+      <li><a href="/services/water-damage-cleanup/">💧 Water Damage Cleanup</a></li>
+      <li><a href="/services/pipe-repair/">🏠 Pipe Repair</a></li>
+      <li><a href="/services/leak-detection/">🔍 Leak Detection</a></li>
+    </ul>
+  </div>
+</aside>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Need a Plumber in Orange County?</h2>
+    <p>We answer 24/7 — same-day service, free estimates, no trip charge.</p>
+    <a href="tel:7145071740" class="phone-big">714-507-1740</a>
+    <a href="tel:7145071740" class="btn btn-call btn-lg">📞 Call 714-507-1740</a>
+    <p style="margin-top:14px;font-size:13px;color:rgba(255,255,255,.6);">Licensed &amp; Insured · 4.9 Stars · Serving All of Orange County</p>
+  </div>
+</section>
+
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <span class="logo-oc">OC</span>
+          <div class="logo-right"><span class="logo-name">Plumbers</span><span class="logo-sub">Plumbing &amp; Water Cleanup</span></div>
+        </a>
+        <p>Orange County's trusted plumber. Licensed, insured, and available 24/7.</p>
+        <div class="footer-phone-row" style="margin-top:16px;"><small>Call Anytime — 24/7</small><a href="tel:7145071740">714-507-1740</a></div>
+        <div style="margin-top:12px;"><a href="tel:7145071740" class="btn btn-call" style="font-size:15px;padding:11px 20px;">📞 Call Now</a></div>
+        <address style="margin-top:14px;font-style:normal;font-size:13px;color:rgba(255,255,255,.6);">Orange County, California</address>
+        <div class="footer-social">
+          <a href="#" class="soc soc-fb" aria-label="Facebook">f</a>
+          <a href="#" class="soc soc-ig" aria-label="Instagram">▣</a>
+          <a href="#" class="soc soc-yt" aria-label="YouTube">▶</a>
+          <a href="#" class="soc soc-li" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/drain-cleaning/">Drain Cleaning</a></li>
+          <li><a href="/services/plumbing-repair/">Plumbing Repair</a></li>
+          <li><a href="/services/water-heater-service/">Water Heater Service</a></li>
+          <li><a href="/services/pipe-repair/">Pipe Repair</a></li>
+          <li><a href="/services/water-damage-cleanup/">Water Damage Cleanup</a></li>
+          <li><a href="/services/leak-detection/">Leak Detection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Service Areas</h5>
+        <ul>
+          <li><a href="tel:7145071740">Anaheim</a></li>
+          <li><a href="tel:7145071740">Irvine</a></li>
+          <li><a href="tel:7145071740">Santa Ana</a></li>
+          <li><a href="tel:7145071740">Fullerton</a></li>
+          <li><a href="tel:7145071740">Huntington Beach</a></li>
+          <li><a href="tel:7145071740">Orange</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/#why-us">About Us</a></li>
+          <li><a href="/#reviews">Reviews</a></li>
+          <li><a href="tel:7145071740">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 OC Plumbers. All rights reserved.</span>
+      <div><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+    </div>
+  </div>
+</footer>
+<div class="mob-call-bar">
+  <a href="tel:7145071740"><span>📞</span> CALL NOW — 714-507-1740</a>
+</div>
+<script>
+function toggleMenu(){const n=document.getElementById('mobileNav');const b=document.querySelector('.hamburger');const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);}
+document.querySelectorAll('.mobile-nav a').forEach(a=>{a.addEventListener('click',()=>document.getElementById('mobileNav').classList.remove('open'));});
+</script>
+
+</body>
+</html>
