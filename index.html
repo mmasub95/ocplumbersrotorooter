@@ -583,14 +583,16 @@
       .mob-hdr-call { display: flex; }
       /* Slim down header to match RR proportions */
       .header-inner { height: 64px; }
-      .logo-oc { font-size: 34px; }
-      .logo-right .logo-name { font-size: 17px; }
+      .logo { gap: 8px; }
+      .logo-oc { font-size: 28px; }
+      .logo-right .logo-name { font-size: 16px; }
+      .logo-right .logo-sub { font-size: 8px; }
       /* Hide the "Call Now" btn in header on mobile — city bar handles it */
       .site-header > .container > .btn-call { display: none; }
 
-      /* City bar: compact, RR-style */
-      .city-bar-inner { padding: 10px 16px; flex-wrap: nowrap; gap: 8px; }
-      .city-loc { font-size: 14px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      /* City bar: allow text to wrap on mobile */
+      .city-bar-inner { padding: 8px 16px; flex-wrap: wrap; gap: 6px; }
+      .city-loc { font-size: 13px; flex: 1 1 100%; white-space: normal; overflow: visible; text-overflow: unset; }
       .city-actions { flex-shrink: 0; gap: 8px; }
       .city-actions .btn { font-size: 13px; padding: 9px 14px; white-space: nowrap; }
 
