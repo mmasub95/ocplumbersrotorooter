@@ -275,10 +275,10 @@
     }
     .hero-inner {
       display: grid;
-      grid-template-columns: 1fr 440px;
+      grid-template-columns: 1fr 500px;
       gap: 0;
-      align-items: stretch;
-      min-height: 580px;
+      align-items: end;
+      min-height: 540px;
     }
     .hero-content {
       padding: 56px 40px 56px 0;
@@ -354,18 +354,22 @@
 
     /* Hero image panel */
     .hero-image-panel {
-      background: rgba(255,255,255,.04);
-      border-left: 1px solid rgba(255,255,255,.08);
+      background: transparent;
       display: flex;
-      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
       position: relative;
-      overflow: hidden;
+      overflow: visible;
+      padding-top: 20px;
     }
     .hero-van-img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: left center;
+      max-width: 620px;
+      height: auto;
+      object-fit: contain;
+      object-position: center bottom;
+      display: block;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,.35));
     }
     .hero-van-placeholder {
       display: flex;
@@ -376,7 +380,6 @@
       padding: 40px;
       text-align: center;
       color: rgba(255,255,255,.3);
-      background: rgba(255,255,255,.03);
     }
     .hero-van-placeholder .van-icon { font-size: 80px; opacity: .25; margin-bottom: 12px; }
     .hero-van-placeholder p { font-size: 13px; opacity: .4; }
@@ -923,7 +926,7 @@
       <!-- Van image (add van.png to /images/) -->
       <div class="hero-image-panel">
         <img
-          src="images/van.jpg"
+          src="images/van.png"
           alt="OC Plumbers service van and technician"
           class="hero-van-img"
           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
