@@ -744,6 +744,22 @@
       .section-cta-row { flex-direction: column; align-items: stretch; }
       .btn-xl { font-size: 19px; padding: 16px 24px; }
     }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--fog); padding: 64px 24px; }
+    .faq-list { max-width: 860px; margin: 28px auto 0; }
+    .faq-item { background: #fff; border-radius: 6px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.06); overflow: hidden; }
+    .faq-q { width: 100%; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; text-align: left; font-family: var(--font); font-size: 16px; font-weight: 700; color: var(--navy); line-height: 1.4; }
+    .faq-q:hover { background: var(--fog); }
+    .faq-icon { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--fog); display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--navy); transition: transform .25s; }
+    .faq-item.open .faq-icon { transform: rotate(180deg); background: var(--navy); color: #fff; }
+    .faq-a { display: none; padding: 0 24px 20px; font-size: 15px; line-height: 1.75; color: var(--body); border-top: 1px solid var(--border); padding-top: 16px; }
+    .faq-item.open .faq-a { display: block; }
+    @media (max-width: 991px) {
+      .faq-section { padding: 48px 16px; }
+      .faq-q { font-size: 15px; padding: 16px 18px; }
+      .faq-a { padding: 0 18px 16px; padding-top: 14px; }
+    }
   </style>
 </head>
 <body>
@@ -1133,6 +1149,61 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <h2 class="section-title" style="text-align:center;">Frequently Asked Questions</h2>
+    <p class="section-body" style="text-align:center; max-width:600px; margin:0 auto 0;">Answers to the most common plumbing questions from Orange County homeowners.</p>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How quickly can a plumber get to my home?<span class="faq-icon">▾</span></button>
+        <div class="faq-a">OC Plumbers offers same-day service throughout Orange County. For true emergencies — burst pipes, flooding, or sewage backup — we dispatch immediately, 24 hours a day, 7 days a week including holidays. Call us now and a real plumber picks up, not an answering service.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you charge extra for nights, weekends, or holidays?<span class="faq-icon">▾</span></button>
+        <div class="faq-a">No. OC Plumbers does not charge overtime rates or extra fees for after-hours, weekend, or holiday calls. You pay the same rate regardless of when you call. We believe emergency plumbing shouldn't cost more just because it happened at an inconvenient time.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How much does a plumber cost in Orange County?<span class="faq-icon">▾</span></button>
+        <div class="faq-a">Plumbing costs vary based on the job — a drain cleaning typically costs less than a pipe repair or water heater replacement. OC Plumbers provides free estimates before any work begins, with no trip charge. You'll know the full price upfront, with no hidden fees or surprises.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What should I do while waiting for a plumber to arrive?<span class="faq-icon">▾</span></button>
+        <div class="faq-a">If you have an active leak or flooding: (1) shut off the main water supply valve — it's usually near your water meter or under the sink; (2) turn off electricity to any affected areas if water is near outlets; (3) move valuables away from standing water; (4) take photos for insurance purposes. Do not use fans if sewage backup is involved.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Are your plumbers licensed and insured?<span class="faq-icon">▾</span></button>
+        <div class="faq-a">Yes. Every OC Plumbers technician holds a California state plumbing license and is fully insured. We also conduct background checks on all employees. You can ask to see credentials at any time — we're happy to provide them before work begins.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I know if I have a slab leak?<span class="faq-icon">▾</span></button>
+        <div class="faq-a">Common signs of a slab leak include: your water bill suddenly spiked with no change in usage, you hear running water when all fixtures are off, there are warm or damp spots on your floor, walls are cracking or flooring is buckling, or your water pressure has dropped. Slab leaks get worse quickly — call us for a same-day inspection.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">My drain keeps clogging — do I need to replace the pipe?<span class="faq-icon">▾</span></button>
+        <div class="faq-a">Not necessarily. Recurring clogs are often caused by grease buildup, root intrusion, or a partial blockage deeper in the line. We use hydro-jetting and camera inspection to find the root cause before recommending a solution. Many recurring clog issues can be resolved without pipe replacement.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long does a water heater replacement take?<span class="faq-icon">▾</span></button>
+        <div class="faq-a">A standard tank water heater replacement typically takes 2–3 hours from arrival to completion. Tankless installations can take 4–6 hours depending on venting and gas line requirements. In most cases, we can complete the job the same day you call, so you're not without hot water overnight.</div>
+      </div>
+
+    </div>
+    <div style="text-align:center; margin-top:36px;">
+      <p style="font-size:15px; color:var(--grey); margin-bottom:16px;">Still have questions? Call us — a real plumber answers 24/7.</p>
+      <a href="tel:7145071740" class="btn btn-call btn-lg">📞 Call 714-507-1740</a>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer id="contact">
   <div class="container">
@@ -1227,6 +1298,14 @@
   }
   document.querySelectorAll('.mobile-nav a').forEach(a => {
     a.addEventListener('click', () => document.getElementById('mobileNav').classList.remove('open'));
+  });
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-q').setAttribute('aria-expanded', 'false'); });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    });
   });
 </script>
 
