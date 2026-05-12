@@ -272,6 +272,7 @@
     /* Mobile-only call section (below grid) — hidden on desktop */
     .hero-call-mob { display: none; }
     .hero-red-banner { display: none; }
+    .hero-mob-rating { display: none; }
     .hero-content { padding: 48px 0 48px 32px; }
     .hero-badge-strip {
       background: var(--red);
@@ -639,6 +640,15 @@
       .hero-rating { display: none; }
 
       /* Mobile call section below hero grid — white bg, matching RR */
+      .hero-mob-rating {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 10px;
+      }
+      .hero-mob-rating .hmr-stars { color: #fbbc04; font-size: 12px; letter-spacing: 1px; line-height: 1; white-space: nowrap; flex-shrink: 0; }
+      .hero-mob-rating .hmr-text strong { display: block; font-size: 11px; font-weight: 700; color: var(--navy); line-height: 1.2; white-space: nowrap; }
+      .hero-mob-rating .hmr-text small { font-size: 9px; color: var(--grey); white-space: nowrap; display: block; }
       .hero-red-banner {
         display: flex;
         align-items: center;
@@ -824,6 +834,10 @@
       <!-- RIGHT: Content (full on desktop, headline-only on mobile) -->
       <div class="hero-content">
         <span class="hero-badge-strip">Free Estimates &nbsp;·&nbsp; No Trip Charge &nbsp;·&nbsp; Same Day Service</span>
+        <div class="hero-mob-rating">
+          <span class="hmr-stars">★★★★★</span>
+          <div class="hmr-text"><strong>Rated 4.9 on Google</strong><small>500+ Google Reviews</small></div>
+        </div>
         <h1 class="hero-title">Plumber in Orange County, CA —<br>Plumbing, Drain Cleaning &amp; Water Cleanup</h1>
         <div class="hero-call-label">Call for Plumbing Service:</div>
         <div class="hero-phone"><a href="tel:7145071740">714-507-1740</a></div>
@@ -838,7 +852,7 @@
           </div>
           <div class="rating-text">
             <strong>Rated 4.9 on Google</strong>
-            <small>500+ Reviews in Orange County</small>
+            <small>500+ Google Reviews</small>
           </div>
         </div>
       </div>
